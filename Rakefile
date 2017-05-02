@@ -14,7 +14,7 @@ task :deploy do
     p "## Commiting: #{message}"
     system "git commit -m \"#{message}\""
     p "## Pushing generated website"
-    system "git push origin gh-pages"
+    system "git push origin master:gh-pages"
     p "## Github Pages deploy complete"
   end
 end
