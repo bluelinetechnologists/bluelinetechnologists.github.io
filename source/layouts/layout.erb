@@ -6,11 +6,27 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || "Blue Line Technologists" %></title>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
   <body>
-    <%= yield %>
+    <div id="main">
+      <div id="flag">
+        <img id="logo" src="/images/logo.png">
+        <h1 id="title">Blue Line Technologists</h1>
+      </div>
+      <div id="navigation">
+        <span class="menu-item"><a class="menu-link" href="/">Status</a></span>
+        <span class="menu-item"><a class="menu-link" href="/submit.html">Submit Proposal</a></span>
+        <span class="menu-item"><a class="menu-link" href="/talks.html">Talks</a></span>
+        <span class="menu-item"><a class="menu-link" href="/blog.html">Blog</a></span>
+        <span class="menu-item"><a class="menu-link" href="/communications.html">Communications</a></span>
+      </div>
+<%= yield %>
+      <div id="footer">
+        <a id="source-code" href="https://github.com/bluelinetechnologists/bluelinetechnologists.github.io">Source Code</a>
+      </div>
+    </div>
   </body>
 </html>
