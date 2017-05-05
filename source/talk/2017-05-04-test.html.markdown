@@ -1,9 +1,0 @@
----
-title: Submitting a Talk
-pageable: true
----
-
-# Submitting a Talk
-
-Blue Line Technologists (BLT)
-Talks at BLT are
