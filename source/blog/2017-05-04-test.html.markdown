@@ -1,6 +1,12 @@
----
-title: testing blog
-pageable: true
----
+# Submitting a Talk
 
-this is only a test blog
+Blue Line Technologists (BLT) is here to support and help people connect with the community.  One of the ways we want the community to connect is through sharing ideas and supporting each other in speaking.  The monthly meetings have two 20 to 30 minute talks or one 45 minute talk.  We strive to have variety each session, so all subjects in software including a programming language, operating system or programming paradigm are welcome.
+
+Sharing ideas and having structured talks is a way to get to know people and give people
+Why
+Cons
+Community
+Giving a talk at BLT is also a great way to
+
+Cheers,
+Jack
