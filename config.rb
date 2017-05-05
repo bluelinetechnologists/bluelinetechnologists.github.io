@@ -21,3 +21,15 @@ end
 set :build_dir, "docs"
 activate :relative_assets
 set :relative_links, true
+
+activate :blog do |blog|
+  blog.name = "blog"
+  blog.prefix = "blog"
+  blog.paginate = true
+end
+
+activate :blog do |blog|
+  blog.name = "talk"
+  blog.prefix = "talk"
+  blog.paginate = true
+end

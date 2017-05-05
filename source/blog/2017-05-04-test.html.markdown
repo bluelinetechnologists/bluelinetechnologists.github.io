@@ -1,0 +1,6 @@
+---
+title: testing blog
+pageable: true
+---
+
+this is only a test blog
