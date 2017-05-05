@@ -1,26 +1,20 @@
+<% initial_article = blog("announcements").articles.first %>
+
 <div id="header">
-  <h1><img id="icon" src="/images/software-icon.png" />Preparing for initial launch</h1>
-  <p>A group of people that work with software companies that live along the Chicago blue line and talk about technology</p>
+  <h1><img id="icon" src="/images/software-icon.png" /><%= initial_article.title %></h1>
 </div>
 
 <div id="upcomming">
-  <% upcomming_article = (blog("talk").articles | blog("blog").articles).first %>
-  <h2>
-    <a href="<%= upcomming_article.url %>"><%= upcomming_article.title %></a>
-    <time><%= upcomming_article.date.strftime('%b %e %Y') %></time>
-  </h2>
-  <%= upcomming_article.summary %>
+  <%= initial_article.body %>
 </div>
 
 <dir id="history">
-  <% (blog("talk").articles | blog("blog").articles).each do |article| %>
+  <% blog("blog").articles.take(12).each do |article| %>
     <div class="icon-field"><div id="circle"></div></div>
-    <div class="history-item">
-      <h2>
-        <a href="<%= article.url %>"><%= article.title %></a>
-        <time><%= article.date.strftime('%b %e %Y') %></time>
-      </h2>
-      <%= article.summary %>
-    </div>
+    <a href="<%= article.url %>">
+      <div class="history-item">
+        <%= article.summary %>
+      </div>
+    </a>
   <% end %>
 </dir>

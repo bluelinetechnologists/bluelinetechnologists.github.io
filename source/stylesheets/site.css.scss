@@ -76,6 +76,7 @@ body {
 #history {
   display: grid;
   grid-template-columns: 5em auto;
+  margin-top: 4em;
 }
 
 .history-item {
@@ -86,9 +87,15 @@ body {
   font-size: 1.2em;
   color: rgb(34, 68, 102);
 
+  /*
   text-decoration-color: rgb(34, 68, 102);
   text-decoration-line: underline;
   text-decoration-style: solid;
+  */
+}
+
+a:link {
+  text-decoration: none;
 }
 
 .icon-field {

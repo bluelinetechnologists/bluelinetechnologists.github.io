@@ -29,6 +29,12 @@ activate :blog do |blog|
 end
 
 activate :blog do |blog|
+  blog.name = "announcements"
+  blog.prefix = "announcements"
+  blog.paginate = true
+end
+
+activate :blog do |blog|
   blog.name = "talk"
   blog.prefix = "talk"
   blog.paginate = true
